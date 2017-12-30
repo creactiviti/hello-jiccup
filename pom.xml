@@ -41,6 +41,12 @@
 		  <artifactId>spring-boot-starter-jiccup</artifactId>
 		  <version>0.0.1-SNAPSHOT</version>
 		</dependency>
+
+		<dependency>
+		  <groupId>com.creactiviti</groupId>
+		  <artifactId>jiccup</artifactId>
+		  <version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		
 	</dependencies>
 
@@ -53,5 +59,19 @@
 		</plugins>
 	</build>
 
+
+	<repositories>
+		<repository>
+			<id>maven-snapshots</id>
+			<url>http://oss.sonatype.org/content/repositories/snapshots</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 
 </project>
