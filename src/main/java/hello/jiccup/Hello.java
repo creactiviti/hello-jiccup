@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.creactiviti.jiccup.Html;
 
 @Controller
+@ResponseBody
 public class Hello {
   
-  @ResponseBody
   @RequestMapping("/hi")
   public Html render () {
     return html (
@@ -20,7 +20,5 @@ public class Hello {
               )
            );
   }
-  
-  
   
 }
